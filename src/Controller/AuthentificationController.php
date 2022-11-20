@@ -1,21 +1,22 @@
 <?php
+
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class BlogController extends AbstractController
+class AuthentificationController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/login')]
     public function blogList(): Response
     {
-        return $this->render('blogList.html.twig',[]);
+        return $this->render('login.html.twig',[]);
     }
 
-    #[Route('/contact')]
+    #[Route('/register')]
     public function contact(): Response
     {
-        return $this->render('contact.html.twig',[]);
+        return $this->render('register.html.twig',[]);
     }
 }
