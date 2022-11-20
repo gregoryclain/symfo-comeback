@@ -13,10 +13,4 @@ class AuthentificationController extends AbstractController
     {
         return $this->render('login.html.twig',[]);
     }
-
-    #[Route('/register')]
-    public function contact(): Response
-    {
-        return $this->render('register.html.twig',[]);
-    }
 }
