@@ -16,7 +16,10 @@
     <body>
         {% block header %}
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                <p>Email: {{ app.user.email }}</p>
+                <p>
+                    Email: {{ app.user.email }}
+                    <a class="btn btn-primary btn-connexion" href="{{ path('app_logout') }}" role="button">Logout</a>
+                </p>
             {% endif %}
         {% endblock %}
 
