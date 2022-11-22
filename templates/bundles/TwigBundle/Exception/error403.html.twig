@@ -1,0 +1,11 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Forbiden</h1>
+
+    <p>
+        Access denied !
+        <a href="{{ path('app_blog_bloglist') }}">return to the homepage</a>.
+    </p>
+{% endblock %}
